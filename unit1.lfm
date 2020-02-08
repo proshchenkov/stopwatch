@@ -1,0 +1,73 @@
+object Form1: TForm1
+  Left = 250
+  Height = 190
+  Top = 128
+  Width = 209
+  Caption = 'Form1'
+  ClientHeight = 190
+  ClientWidth = 209
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 13
+    Top = 104
+    Width = 31
+    Caption = 'Label1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 13
+    Top = 128
+    Width = 31
+    Caption = 'Label2'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 13
+    Top = 152
+    Width = 31
+    Caption = 'Label3'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 13
+    Top = 32
+    Width = 68
+    Caption = '00:00:00  000'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Start'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 112
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Stop'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    left = 88
+    top = 112
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer2Timer
+    left = 136
+    top = 112
+  end
+end
